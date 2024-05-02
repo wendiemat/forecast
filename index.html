@@ -35,13 +35,15 @@
           <div>
             <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
-              Wednesday 17:02, broken clouds
+              <span id="time"></span>,
+              <span id="description"></span>
               <br />
-              Humidity: <strong>65%</strong>, Wind: <strong>4.63km/h</strong>
+              Humidity: <strong id="condition-humidity"></strong>, Wind:
+              <strong id="condition-wind"></strong>
             </p>
           </div>
           <div class="weather-app-temp-container">
-            <div class="weather-app-icon">⛅️</div>
+            <div id="icon"></div>
             <div class="weather-app-temp" id="temperature"></div>
             <div class="weather-app-unit">°C</div>
           </div>
@@ -51,9 +53,9 @@
       <footer>
         This project was coded by
         <a href="https://github.com/wendiemat" target="_blank">
-          Wendy Mathabela,
+          Wendy Mathabela
         </a>
-        is open-sourced on
+        , is open-sourced on
         <a href="https://github.com/wendiemat/forecast">GitHub</a> and hosted on
         <a href="https://github.com/wendiemat/forecast">Netlify.</a>
       </footer>

@@ -72,8 +72,8 @@ main {
 }
 
 .weather-app-icon {
-  font-size: 44px;
-  margin-top: 24px;
+  width: 88px;
+  height: 88px;
 }
 
 .weather-app-temp {
