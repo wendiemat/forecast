@@ -59,7 +59,35 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast(day) {
+  let days = ["Thurs", "Fri", "Sat", "Sun"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+      <div class="weather-forecast-day">
+      <div class="weather-forecast-date">${day}</div>
+      <img
+        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+        width="42px"
+      />
+      <div class="weather-forecast-temp">
+        <span class="weather-forecast-temp-max">18°</span>
+        <span class="weather-forecast-temp-min">12°</span>
+      </div>
+      </div>
+    
+`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFromElement = document.querySelector("#search-form");
 searchFromElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("cape town");
+displayForecast();

@@ -94,6 +94,11 @@ main {
   color: black;
 }
 
+.weather-forecast-day {
+  display: inline-block;
+  margin-right: 3rem;
+}
+
 .weather-forecast-date,
 .weather-forecast-temp-min {
   font-size: 16px;
